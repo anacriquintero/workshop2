@@ -1,0 +1,24 @@
+services:  
+  db_ana_test:
+    image: postgres:16
+    container_name: db_ana_test
+    environment: 
+      - POSTGRES_PASSWORD=ana
+      - POSTGRES_DB=workshop2
+    command: ["postgres", "-c", "max_connections=1000"]
+    networks:
+      - ananet
+    ports: 
+      - 54321:5432
+    volumes:
+      - postgres_data_ana:/var/lib/postgresql/data
+
+  
+
+volumes:
+  postgres_data_ana:
+
+networks:
+  ananet:
+    name: ananet
+    driver: bridge

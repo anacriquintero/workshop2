@@ -1,0 +1,8 @@
+activar el entorno virtual
+
+source venv/bin/activate
+
+
+la variable de  arifloe
+
+export AIRFLOW_HOME=~Desktop/workshop2
