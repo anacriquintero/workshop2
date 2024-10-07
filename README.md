@@ -1,4 +1,4 @@
-INTROFUCCION
+# INTROFUCCION
 This project focuses on exploratory data analysis (EDA) of a Grammy Awards-related
 dataset, using modern data science and infrastructure management tools. The dataset was
 stored in a PostgreSQL database, where it was accessed and processed using Python.
